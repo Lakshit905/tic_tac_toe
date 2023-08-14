@@ -17,7 +17,7 @@ const StatusMessage = ({ gamingBoard ,winner})=> {
                 </>
     }
     if(!winner && !noMovesLeft){
-        return <> Next Player is <span className={nxtPlayer ? "text-green" : "text-orange"}>{nxtPlayer}</span></>
+        return <> Next Player is { ''} <span className={nxtPlayer === 'X' ? 'text-green' : 'text-orange'}>{nxtPlayer}</span> </>
     }
     return null;
   };
